@@ -5,7 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Nav from 'react-bootstrap/Nav';
 import Badge from 'react-bootstrap/Badge';
-import NavBar from 'react-bootstrap/NavBar';
+
 
 import Container from 'react-bootstrap/Container';
 import { LinkContainer } from 'react-router-bootstrap';
@@ -24,10 +24,10 @@ export default function NavScreen() {
 
   return (
     <header>
-      <NavBar bg="dark" expand="lg" variant="dark">
+      <Navbar bg="dark" expand="lg" variant="dark">
         <Container>
           <LinkContainer to="/">
-            <NavBar.Brand className="Brand">amazona</NavBar.Brand>
+            <Navbar.Brand className="Brand">amazona</Navbar.Brand>
           </LinkContainer>
 
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -70,7 +70,7 @@ export default function NavScreen() {
             </Nav>
           </Navbar.Collapse>
         </Container>
-      </NavBar>
+      </Navbar>
     </header>
   );
 }
